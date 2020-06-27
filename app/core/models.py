@@ -12,7 +12,7 @@ class UserManager(BaseUserManager):
             raise ValueError('Users must have an Email address')
         user.set_password(password)
         user.save(using=self._db)
-        # This is used when we are using multiple databases
+    # This is used when we are using multiple databases
 
         return user
 
